@@ -92,5 +92,23 @@ git branch -d <branch>
 git branch -d gg
 # 查看当前的本地分支
 git branch 
+# 本地分支与远程分支相关联
+git branch --set-upstream-to origin/gg 
+# 推送远程服务器一个分支，并且重新远程也有了个aa分支
+git push origin aa
+# 将本地的当前分支推送给远程的相关联的分支
+git push origin HEAD:gg
+```
+
+# branch的用法
+
+```bash
+# 显示本地所有分支，分支名前面有*号的代表当前正处于哪个分支。 
+# 查看本地分支
+git branch
+# 查看本地分支+上次提交的信息
+git branch -v
+查看本地分支+上次提交的信息+本地和远程分支的关系
+git branch -vv
 ```
 
